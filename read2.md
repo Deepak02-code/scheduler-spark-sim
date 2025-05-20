@@ -1,1 +1,0 @@
-#karki ek maha chutiya hai

@@ -1,4 +1,4 @@
-karki ek chutiya hai
+
 # Process Scheduler Simulator
 
 A BCA student project that simulates CPU scheduling algorithms like First Come First Serve (FCFS) and Shortest Job First (SJF).
