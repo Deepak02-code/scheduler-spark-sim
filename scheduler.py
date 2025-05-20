@@ -5,7 +5,7 @@ Process Scheduler Simulator Backend
 This Python file contains the implementation of various CPU scheduling algorithms 
 for the Process Scheduler Simulator project.
 
-Author: BCA Student
+Author: 3 MUSKETEERS
 """
 
 def first_come_first_serve(processes):

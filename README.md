@@ -62,7 +62,10 @@ This project simulates CPU scheduling algorithms through a user-friendly web int
 - Support process priorities and other attributes
 
 ## Author
-BCA Student
+3 MUSKETEERS 
+Anjali (group leader)
+Deepak (group coder)
+Suhani (group helper)
 
 ## Acknowledgements
 This project was created as a part of the BCA program curriculum to understand Operating System concepts.
