@@ -5,8 +5,12 @@ const colors = ['#3498db', '#e74c3c', '#2ecc71', '#f39c12', '#9b59b6', '#1abc9c'
 
 // Wait for DOM to fully load
 document.addEventListener('DOMContentLoaded', function() {
+    console.log("DOM fully loaded");
     // Add event listeners
-    document.getElementById('generateTable').addEventListener('click', generateProcessTable);
+    document.getElementById('generateTable').addEventListener('click', function() {
+        console.log("Generate Table button clicked");
+        generateProcessTable();
+    });
     document.getElementById('calculateBtn').addEventListener('click', calculateScheduling);
     document.getElementById('algorithm').addEventListener('change', updateAlgorithmDescription);
     
@@ -46,8 +50,14 @@ function updateAlgorithmDescription() {
 
 // Generate the process input table
 function generateProcessTable() {
-    const count = parseInt(document.getElementById('processCount').value);
+    console.log("Generating process table");
+    const count = parseInt(document.getElementById('processCount').value) || 3; // Default to 3 if invalid
     const tbody = document.getElementById('processTable').getElementsByTagName('tbody')[0];
+    
+    console.log("Process count:", count);
+    console.log("Table body element:", tbody);
+    
+    // Clear existing rows
     tbody.innerHTML = '';
     
     for (let i = 0; i < count; i++) {
@@ -75,6 +85,8 @@ function generateProcessTable() {
         burstInput.value = Math.floor(Math.random() * 10) + 1; // Random default values between 1-10
         cell3.appendChild(burstInput);
     }
+    
+    console.log("Table generation complete");
 }
 
 // Collect data from the process table
