@@ -1,0 +1,101 @@
+
+body {
+    background-color: #ecf0f1;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+.bg-primary {
+    background-color: #3498db !important;
+}
+
+.bg-success {
+    background-color: #2ecc71 !important;
+}
+
+.bg-info {
+    background-color: #2980b9 !important;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.btn-success {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+}
+
+.btn-success:hover {
+    background-color: #27ae60;
+    border-color: #27ae60;
+}
+
+.gantt-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+    min-height: 80px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.gantt-block {
+    display: inline-block;
+    height: 50px;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    margin-right: 1px;
+    position: relative;
+}
+
+.gantt-label {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    color: #333;
+    font-size: 12px;
+}
+
+.table-primary, .table-success {
+    background-color: rgba(52, 152, 219, 0.2) !important;
+}
+
+#resultsSection {
+    transition: all 0.5s ease;
+}
+
+/* Student project feel - notebook paper effect */
+.card-body {
+    background-color: #fff;
+    background-image: linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+}

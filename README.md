@@ -1,73 +1,68 @@
-# Welcome to your Lovable project
 
-## Project info
+# Process Scheduler Simulator
 
-**URL**: https://lovable.dev/projects/1d32c597-1c38-4bce-9750-15ba6b8b3571
+A BCA student project that simulates CPU scheduling algorithms like First Come First Serve (FCFS) and Shortest Job First (SJF).
 
-## How can I edit this code?
+## Project Overview
 
-There are several ways of editing your application.
+This project simulates CPU scheduling algorithms through a user-friendly web interface. It's designed as a learning tool for understanding how different scheduling algorithms work in operating systems.
 
-**Use Lovable**
+## Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1d32c597-1c38-4bce-9750-15ba6b8b3571) and start prompting.
+- Input process details (arrival time, burst time)
+- Choose between different scheduling algorithms:
+  - First Come First Serve (FCFS)
+  - Shortest Job First (SJF)
+  - More algorithms coming soon
+- View results in a table format
+- Visual Gantt chart representation
+- Calculate key metrics: turnaround time, waiting time
 
-Changes made via Lovable will be committed automatically to this repo.
+## Project Structure
 
-**Use your preferred IDE**
+- `index.html` - The main HTML file for the web interface
+- `styles.css` - CSS styles for the web interface
+- `script.js` - Frontend JavaScript code for the web interface
+- `scheduler.py` - Python backend implementation of scheduling algorithms
+- `server.py` - Flask server to integrate Python backend with web frontend
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## How to Run
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Frontend Only (HTML/CSS/JS)
+1. Open `index.html` in any modern web browser
+2. Use the interface to input process details and see results
 
-Follow these steps:
+### With Python Backend
+1. Install required Python packages:
+   ```
+   pip install flask flask-cors
+   ```
+2. Run the Flask server:
+   ```
+   python server.py
+   ```
+3. Open `index.html` in a web browser
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Understanding the Code
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Frontend (HTML/CSS/JS)
+- The interface allows inputting process details and choosing algorithms
+- JavaScript functions handle the user interface and calculations
+- Results are displayed in both table and Gantt chart formats
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Backend (Python)
+- `scheduler.py` contains the implementations of scheduling algorithms
+- Each algorithm is implemented as a separate function
+- The code includes detailed comments to aid understanding
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## Future Enhancements
+- Add more scheduling algorithms (Round Robin, Priority Scheduling)
+- Implement preemptive versions of algorithms
+- Add visualization improvements
+- Support process priorities and other attributes
 
-**Edit a file directly in GitHub**
+## Author
+BCA Student
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/1d32c597-1c38-4bce-9750-15ba6b8b3571) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Acknowledgements
+This project was created as a part of the BCA program curriculum to understand Operating System concepts.
