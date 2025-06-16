@@ -13,7 +13,8 @@ This project simulates CPU scheduling algorithms through a user-friendly web int
 - Choose between different scheduling algorithms:
   - First Come First Serve (FCFS)
   - Shortest Job First (SJF)
-  - More algorithms coming soon
+  - Round Robin
+  - Priority scheduling 
 - View results in a table format
 - Visual Gantt chart representation
 - Calculate key metrics: turnaround time, waiting time
@@ -56,7 +57,6 @@ This project simulates CPU scheduling algorithms through a user-friendly web int
 - The code includes detailed comments to aid understanding
 
 ## Future Enhancements
-- Add more scheduling algorithms (Round Robin, Priority Scheduling)
 - Implement preemptive versions of algorithms
 - Add visualization improvements
 - Support process priorities and other attributes
