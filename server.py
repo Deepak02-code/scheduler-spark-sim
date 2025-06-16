@@ -28,6 +28,7 @@ def calculate():
     data = request.json
     processes = data.get('processes', [])
     algorithm = data.get('algorithm', 'fcfs')
+    time_quantum = data.get('time_quantum', 2)
     
     # Validate input
     if not processes:
@@ -39,6 +40,10 @@ def calculate():
             result = scheduler.first_come_first_serve(processes)
         elif algorithm == 'sjf':
             result = scheduler.shortest_job_first(processes)
+        elif algorithm == 'rr':
+            result = scheduler.round_robin(processes, time_quantum)
+        elif algorithm == 'priority':
+            result = scheduler.priority_scheduling(processes)
         else:
             return jsonify({'error': f'Algorithm {algorithm} not implemented yet'}), 400
         
