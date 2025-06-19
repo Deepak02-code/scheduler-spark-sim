@@ -63,9 +63,9 @@ This project simulates CPU scheduling algorithms through a user-friendly web int
 
 ## Author
 3 MUSKETEERS 
-Anjali (group leader)
-Deepak (group coder)
-Suhani (group helper)
+Anjali (integration)
+Deepak (frontend dev)
+Suhani (scheduling alogrithms)
 
 ## Acknowledgements
 This project was created as a part of the BCA program curriculum to understand Operating System concepts.
